@@ -14,6 +14,12 @@ This learning path targets **beginners to junior developers and DevOps engineers
     - Process text and automate tasks with shell scripts
     - Manage packages, processes, and system services
 
+=== "Linux Missions"
+    - 16 hands-on troubleshooting scenarios
+    - Broken systems — find why, fix it
+    - Build real command-line confidence before Docker
+    - From file navigation to namespaces
+
 === "Docker & Containers"
     - Understand what containers really are (and aren't)
     - Write Dockerfiles and build images
@@ -47,6 +53,7 @@ This learning path targets **beginners to junior developers and DevOps engineers
 |---|---|
 | [Roadmap](roadmap/index.md) | See the full learning path and checkpoints |
 | [Modules](modules/index.md) | 16 structured modules with theory and practice |
+| [Linux Missions](linux-missions/index.md) | 16 hands-on troubleshooting missions — build real command-line confidence |
 | [Labs](labs/index.md) | 8 hands-on labs — build real things |
 | [Exercises](exercises/index.md) | Practice tasks for every level |
 | [Resources](resources/index.md) | Cheat sheets, glossary, official docs |

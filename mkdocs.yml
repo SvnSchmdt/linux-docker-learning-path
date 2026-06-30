@@ -91,6 +91,24 @@ nav:
     - "13 - Docker Compose": modules/13-docker-compose/README.md
     - "14 - Registry & Distribution": modules/14-registry-and-distribution/README.md
     - "15 - Production Patterns": modules/15-production-patterns/README.md
+  - Linux Missions:
+    - linux-missions/index.md
+    - "01 - Find Your Way": linux-missions/01-find-your-way.md
+    - "02 - Permission Denied": linux-missions/02-permission-denied.md
+    - "03 - Process Detective": linux-missions/03-process-detective.md
+    - "04 - Port in Use": linux-missions/04-port-in-use.md
+    - "05 - DNS is Broken": linux-missions/05-dns-is-broken.md
+    - "06 - Service Won't Start": linux-missions/06-service-wont-start.md
+    - "07 - Log Hunt": linux-missions/07-log-hunt.md
+    - "08 - Disk Full": linux-missions/08-disk-full.md
+    - "09 - SSH Key Trouble": linux-missions/09-ssh-key-trouble.md
+    - "10 - Cron Did Not Run": linux-missions/10-cron-did-not-run.md
+    - "11 - Poor Man's Monitoring": linux-missions/11-poor-mans-monitoring.md
+    - "12 - Backup and Restore": linux-missions/12-backup-and-restore.md
+    - "13 - Network Sleuth": linux-missions/13-network-sleuth.md
+    - "14 - Build a Mini Webserver": linux-missions/14-build-a-mini-webserver.md
+    - "15 - Linux Namespaces: First Look": linux-missions/15-linux-namespaces-first-look.md
+    - "16 - Final Linux Bossfight": linux-missions/16-final-linux-bossfight.md
   - Labs:
     - labs/index.md
     - "Lab 00 - Terminal Setup": labs/00-terminal-setup/README.md
@@ -109,6 +127,7 @@ nav:
   - Resources:
     - resources/index.md
     - Cheat Sheet: resources/cheat-sheet.md
+    - Troubleshooting Flow: resources/troubleshooting-flow.md
     - Glossary: resources/glossary.md
     - Official Docs: resources/official-docs.md
   - Examples:

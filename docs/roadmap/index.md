@@ -5,5 +5,5 @@ This section gives you orientation in the learning path — where you are, what'
 | Document | Content |
 |----------|---------|
 | [Overview](00-overview.md) | Big picture and learning objectives |
-| [Learning Path](01-learning-path.md) | Step-by-step progression through all modules |
+| [Learning Path](01-learning-path.md) | Step-by-step progression through all modules and missions |
 | [Checkpoints](02-checkpoints.md) | Self-assessment tests for each phase |

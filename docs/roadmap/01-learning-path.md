@@ -28,6 +28,33 @@ Module 08 – Shell Scripting
 
 **After Phase 1 you can:** navigate the filesystem, manage files and permissions, process logs, write simple scripts, and manage packages on Ubuntu/Debian/Fedora/macOS.
 
+## Phase 1b – Linux Missions (after Module 08)
+
+After completing the Linux modules, work through the missions before starting Docker. They build hands-on troubleshooting confidence on real broken scenarios.
+
+```
+[Checkpoint 1 – Linux Basics]
+    ↓
+Mission 01 – Find Your Way
+Mission 02 – Permission Denied
+Mission 03 – Process Detective
+Mission 04 – Port in Use
+Mission 05 – DNS is Broken
+Mission 06 – Service Won't Start
+Mission 07 – Log Hunt
+Mission 08 – Disk Full
+Mission 09 – SSH Key Trouble
+Mission 10 – Cron Did Not Run
+Mission 11 – Poor Man's Monitoring
+Mission 12 – Backup and Restore
+Mission 13 – Network Sleuth
+Mission 14 – Build a Mini Webserver
+Mission 15 – Linux Namespaces: First Look
+Mission 16 – Final Linux Bossfight ← required for Phase 2
+```
+
+**After the missions you can:** debug real Linux problems systematically, read error messages accurately, and understand what Docker does at the kernel level.
+
 ## Phase 2 – Container Foundations (Modules 09–11)
 
 ```
