@@ -4,6 +4,8 @@ A practical, hands-on learning path for Linux fundamentals and Docker — from y
 
 **German primary content · English UI · Dual-language documentation**
 
+🌐 **[svnschmdt.github.io/linux-docker-learning-path](https://svnschmdt.github.io/linux-docker-learning-path/)** · [Deutsch](https://svnschmdt.github.io/linux-docker-learning-path/de/)
+
 ---
 
 ## Who this is for
