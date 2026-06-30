@@ -1,0 +1,38 @@
+# Multi-stage build for a Node.js application
+# Stage 1: Install dependencies and build
+# Stage 2: Runtime image (no build tools, no source code)
+
+# ─── Stage 1: Builder ───────────────────────────────────────────────────────
+FROM node:20-alpine AS builder
+
+WORKDIR /build
+
+# Copy dependency manifest first (cache layer if unchanged)
+COPY package*.json ./
+RUN npm ci --only=production
+
+# Copy source and build
+COPY src/ ./src/
+RUN npm run build 2>/dev/null || true
+
+# ─── Stage 2: Runtime ───────────────────────────────────────────────────────
+FROM node:20-alpine AS runtime
+
+WORKDIR /app
+
+# Non-root user for security
+RUN addgroup --system appgroup && \
+    adduser --system --ingroup appgroup appuser
+
+# Copy only what's needed from the builder stage
+COPY --from=builder --chown=appuser:appgroup /build/node_modules ./node_modules
+COPY --from=builder --chown=appuser:appgroup /build/dist ./dist
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+  CMD wget -qO- http://localhost:3000/health || exit 1
+
+USER appuser
+ENV NODE_ENV=production
+EXPOSE 3000
+CMD ["node", "dist/server.js"]

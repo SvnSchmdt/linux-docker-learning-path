@@ -1,0 +1,65 @@
+# .dockerignore — files and directories excluded from the Docker build context
+# Copy to .dockerignore in your project root
+
+# Version control
+.git/
+.gitignore
+.github/
+
+# Development tools and configs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+dist/
+*.egg-info/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.yarn/
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Build outputs (copy only what you need explicitly in Dockerfile)
+build/
+dist/
+target/
+out/
+
+# Documentation and tests (unless your app serves them)
+docs/
+*.md
+tests/
+test/
+spec/
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker files you don't want in the context
+Dockerfile*
+docker-compose*.yml
+.dockerignore

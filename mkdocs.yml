@@ -1,0 +1,116 @@
+site_name: Linux & Docker Learning Path
+site_description: A practical Linux and Docker learning path from your first terminal command to production-ready container workflows
+site_author: Sven Schmidt
+site_url: https://svnschmdt.github.io/linux-docker-learning-path/
+repo_name: svnschmdt/linux-docker-learning-path
+repo_url: https://github.com/svnschmdt/linux-docker-learning-path
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          site_name: Linux & Docker Learning Path
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: Linux & Docker Learning Path
+
+nav:
+  - Home: index.md
+  - Roadmap:
+    - roadmap/index.md
+    - Overview: roadmap/00-overview.md
+    - Learning Path: roadmap/01-learning-path.md
+    - Checkpoints: roadmap/02-checkpoints.md
+  - Modules:
+    - modules/index.md
+    - "00 - Prerequisites": modules/00-prerequisites/README.md
+    - "01 - Linux Navigation": modules/01-linux-navigation/README.md
+    - "02 - Files & Permissions": modules/02-files-and-permissions/README.md
+    - "03 - Text Processing": modules/03-text-processing/README.md
+    - "04 - Users & sudo": modules/04-users-and-sudo/README.md
+    - "05 - Processes & System": modules/05-processes-and-system/README.md
+    - "06 - Networking Basics": modules/06-networking-basics/README.md
+    - "07 - Package Management": modules/07-package-management/README.md
+    - "08 - Shell Scripting": modules/08-shell-scripting/README.md
+    - "09 - Container Basics": modules/09-container-basics/README.md
+    - "10 - Dockerfile & Build": modules/10-dockerfile-and-build/README.md
+    - "11 - Running Containers": modules/11-running-containers/README.md
+    - "12 - Volumes & Networking": modules/12-volumes-and-networking/README.md
+    - "13 - Docker Compose": modules/13-docker-compose/README.md
+    - "14 - Registry & Distribution": modules/14-registry-and-distribution/README.md
+    - "15 - Production Patterns": modules/15-production-patterns/README.md
+  - Labs:
+    - labs/index.md
+    - "Lab 00 - Terminal Setup": labs/00-terminal-setup/README.md
+    - "Lab 01 - Filesystem Navigation": labs/01-filesystem-navigation/README.md
+    - "Lab 02 - Files & Permissions": labs/02-files-and-permissions/README.md
+    - "Lab 03 - Text Processing": labs/03-text-processing/README.md
+    - "Lab 04 - First Container": labs/04-first-container/README.md
+    - "Lab 05 - Custom Image": labs/05-custom-image/README.md
+    - "Lab 06 - Docker Compose App": labs/06-docker-compose-app/README.md
+    - "Lab 07 - Multi-Stage Build": labs/07-multistage-build/README.md
+  - Exercises:
+    - exercises/index.md
+    - Beginner: exercises/beginner.md
+    - Intermediate: exercises/intermediate.md
+    - Troubleshooting: exercises/troubleshooting.md
+  - Resources:
+    - resources/index.md
+    - Cheat Sheet: resources/cheat-sheet.md
+    - Glossary: resources/glossary.md
+    - Official Docs: resources/official-docs.md
+  - Examples:
+    - examples/index.md
+  - Contributing: contributing.md

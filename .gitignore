@@ -1,0 +1,15 @@
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+.venv/
+site/
+.cache/
+__pycache__/
+*.py[cod]
+.env
+!*.example.env
+node_modules/
+*.log
+*.tmp
